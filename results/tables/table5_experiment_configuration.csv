@@ -1,0 +1,15 @@
+component,parameter,value,source
+Change-point detector,training_threshold_percentile,95,Paper 3 reproduction
+Change-point detector,derived_threshold,,Local training data
+Workload forecasting,model,Histogram Gradient Boosting,Paper 3 reproduction
+Failure-risk model,model,XGBoost,Paper 4 reproduction
+Calibration,method,Isotonic calibration,Paper 4 reproduction
+Adaptive threshold,base_threshold,0.9591,Paper 4 validation-selected threshold
+Adaptive threshold,eta,0.01,Experiment configuration
+Adaptive threshold,minimum_threshold,0.5,Experiment configuration
+Adaptive threshold,maximum_threshold,0.99,Experiment configuration
+Capacity reserve,reserve_factor,1.1,Experiment configuration
+Bootstrap,replicates,2000,Paper 3 methodology
+Bootstrap,block_length,288,Paper 3 methodology
+Bootstrap,confidence_level,0.95,Paper 3 methodology
+Multiple comparisons,correction,Holm-Bonferroni,Experiment methodology

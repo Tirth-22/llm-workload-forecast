@@ -1,0 +1,45 @@
+{
+  "module": "08_probability_calibration",
+  "method": "isotonic_regression",
+  "input_predictions": "results\\predictions\\failure_risk_predictions.csv",
+  "calibration_model": "models\\calibration\\isotonic_failure_calibrator.joblib",
+  "output_predictions": "results\\predictions\\calibrated_failure_risk_predictions.csv",
+  "partition_source": "Module 07 split column",
+  "calibration_split": "calibration",
+  "test_split": "test",
+  "calibration_start_minute": 67789,
+  "calibration_end_minute": 74181,
+  "calibration_rows": 6393,
+  "test_start_minute": 74182,
+  "test_end_minute": 87832,
+  "test_rows": 13651,
+  "calibration_failure_rate": 0.0448928515563898,
+  "raw_calibration_metrics": {
+    "brier_score": 0.03510643614861834,
+    "log_loss": 0.14152879039234997,
+    "mean_probability": 0.0662668112810402,
+    "failure_rate": 0.0448928515563898
+  },
+  "calibrated_calibration_metrics": {
+    "brier_score": 0.0331919955875963,
+    "log_loss": 0.12944810932796671,
+    "mean_probability": 0.044892870498983266,
+    "failure_rate": 0.0448928515563898
+  },
+  "raw_test_metrics": {
+    "brier_score": 0.015318401684128305,
+    "log_loss": 0.09111334499158345,
+    "mean_probability": 0.0629396108218951,
+    "failure_rate": 0.0136986301369863
+  },
+  "calibrated_test_metrics": {
+    "brier_score": 0.012543587705311082,
+    "log_loss": 0.06720252694317388,
+    "mean_probability": 0.03463229193065978,
+    "failure_rate": 0.0136986301369863
+  },
+  "test_used_for_fitting": false,
+  "threshold_selection_performed": false,
+  "capacity_simulation_performed": false,
+  "calibration_validation": "PASS"
+}

@@ -1,0 +1,14 @@
+component,category,basis
+BurstGPT preprocessing,Reproduced,BurstGPT / Paper 3 / Paper 4
+Five-minute workload aggregation,Reproduced,Paper 3
+Causal change-point detector,Reproduced,Paper 3
+HGB workload forecaster,Reproduced,Paper 3
+CP-HGB workload forecaster,Reproduced,Paper 3
+Minute-level failure target,Reproduced,Paper 4
+89 risk features,Reproduced,Paper 4
+XGBoost failure-risk model,Reproduced,Paper 4
+Isotonic probability calibration,Reproduced,Paper 4
+Forecast-driven normalized capacity,Integration,Project methodology
+Adaptive risk threshold,Proposed,Project methodology
+Change-point threshold reset,Proposed,Project methodology
+Four-policy comparison,Proposed,Project methodology

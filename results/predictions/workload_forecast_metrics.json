@@ -1,0 +1,28 @@
+{
+  "split": {
+    "train_size": 12384,
+    "calibration_size": 2592,
+    "test_size": 2590
+  },
+  "model_parameters": {
+    "max_iter": 80,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 30,
+    "l2_regularization": 1.0
+  },
+  "HGB": {
+    "MAE": 24212.66627506664,
+    "RMSE": 50406.64933083414,
+    "WAPE_percent": 66.17311408002205,
+    "sMAPE_percent": 102.96406914269089,
+    "mean_bias": -13564.3146847736
+  },
+  "CP_HGB": {
+    "MAE": 24866.506736435276,
+    "RMSE": 51567.01631561345,
+    "WAPE_percent": 67.96005728358139,
+    "sMAPE_percent": 103.23784536820435,
+    "mean_bias": -15192.987893390375
+  }
+}

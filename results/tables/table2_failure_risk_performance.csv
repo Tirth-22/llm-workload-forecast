@@ -1,0 +1,2 @@
+test_rows,failure_prevalence_percent,ROC_AUC,Average_Precision,Brier_calibrated,Brier_raw_diagnostic,ECE_10_bin,classification_threshold,Precision,Recall,F1
+13651,1.36986301369863,0.8098885600261819,0.2151903849490615,0.01254358770531,0.0153184016841283,0.0211429512418562,0.9591,1.0,0.0641711229946524,0.1206030150753768

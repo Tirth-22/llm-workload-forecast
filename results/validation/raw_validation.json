@@ -1,0 +1,66 @@
+{
+  "dataset": {
+    "file": "data\\BurstGPT_1.csv",
+    "rows": 1429737,
+    "columns": [
+      "Timestamp",
+      "Model",
+      "Request tokens",
+      "Response tokens",
+      "Total tokens",
+      "Log Type"
+    ],
+    "sha256": "46fc9480ef0b748ecb2b51d512ff08c196b031782cbe6f78e28044d768e86d5a"
+  },
+  "timestamp": {
+    "minimum": 5,
+    "maximum": 5269973,
+    "decreases": 0,
+    "nondecreasing": true
+  },
+  "missing_values": {
+    "Timestamp": 0,
+    "Model": 0,
+    "Request tokens": 0,
+    "Response tokens": 0,
+    "Total tokens": 0,
+    "Log Type": 0
+  },
+  "numeric_conversion_errors": {
+    "Timestamp": 0,
+    "Request tokens": 0,
+    "Response tokens": 0,
+    "Total tokens": 0
+  },
+  "token_validation": {
+    "request_tokens_sum": 872984237,
+    "response_tokens_sum": 176278813,
+    "total_tokens_sum": 1049263050,
+    "arithmetic_errors": 0,
+    "negative_values": {
+      "Request tokens": 0,
+      "Response tokens": 0,
+      "Total tokens": 0
+    }
+  },
+  "zero_response": {
+    "zero_response_rows": 25443,
+    "zero_request_rows": 25427,
+    "zero_total_rows": 25427
+  },
+  "duplicates": {
+    "rows_in_duplicate_groups": 89918,
+    "duplicate_patterns": 35878,
+    "removed": false
+  },
+  "categorical_distribution": {
+    "models": {
+      "ChatGPT": 1210109,
+      "GPT-4": 219628
+    },
+    "log_types": {
+      "API log": 1275518,
+      "Conversation log": 154219
+    }
+  }
+}

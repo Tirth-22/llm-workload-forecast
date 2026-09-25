@@ -1,0 +1,98 @@
+{
+  "forecast": [
+    {
+      "model": "HGB",
+      "test_rows": 2589,
+      "MAE": 24212.66627506664,
+      "RMSE": 50406.64933083414,
+      "WAPE_percent": 66.17311408002205,
+      "sMAPE_percent": 102.96406914269089,
+      "mean_bias": -13564.3146847736
+    },
+    {
+      "model": "CP-HGB",
+      "test_rows": 2589,
+      "MAE": 24866.506736435276,
+      "RMSE": 51567.01631561345,
+      "WAPE_percent": 67.96005728358139,
+      "sMAPE_percent": 103.23784536820435,
+      "mean_bias": -15192.987893390375
+    }
+  ],
+  "risk": {
+    "test_rows": 13651,
+    "failure_prevalence": 0.0136986301369863,
+    "failure_prevalence_percent": 1.36986301369863,
+    "ROC_AUC": 0.8098885600261819,
+    "Average_Precision": 0.21519038494906154,
+    "Brier_calibrated": 0.012543587705310092,
+    "Brier_raw_diagnostic": 0.015318401684128305,
+    "ECE_10_bin": 0.021142951241856216,
+    "classification_threshold": 0.9591,
+    "Precision": 1.0,
+    "Recall": 0.06417112299465241,
+    "F1": 0.12060301507537688
+  },
+  "capacity": [
+    {
+      "intervals": 2589,
+      "under_provisioned_percent": 56.46967941290073,
+      "mean_shortage": 20029.747314912824,
+      "p95_shortage": 113332.91369897804,
+      "shortfall_cvar95": 167672.3412847221,
+      "mean_unused_capacity": 4836.759421522448,
+      "mean_provisioned_capacity": 21396.8970042535,
+      "mean_actual_workload": 36589.884897643875,
+      "reserve_activation_percent": 0.0,
+      "cost_index": 0.5847762862361807,
+      "total_shortage": 51857015.798309304,
+      "total_unused_capacity": 12522370.142321618,
+      "policy": "V1"
+    },
+    {
+      "intervals": 2589,
+      "under_provisioned_percent": 56.46967941290073,
+      "mean_shortage": 20029.216646572375,
+      "p95_shortage": 113332.91369897804,
+      "shortfall_cvar95": 167672.3412847221,
+      "mean_unused_capacity": 4838.640906538711,
+      "mean_provisioned_capacity": 21399.309157610212,
+      "mean_actual_workload": 36589.884897643875,
+      "reserve_activation_percent": 0.1544998068752414,
+      "cost_index": 0.584842210284957,
+      "total_shortage": 51855641.89797588,
+      "total_unused_capacity": 12527241.307028722,
+      "policy": "V2"
+    },
+    {
+      "intervals": 2589,
+      "under_provisioned_percent": 56.46967941290073,
+      "mean_shortage": 20029.216646572375,
+      "p95_shortage": 113332.91369897804,
+      "shortfall_cvar95": 167672.3412847221,
+      "mean_unused_capacity": 4839.574485580001,
+      "mean_provisioned_capacity": 21400.242736651504,
+      "mean_actual_workload": 36589.884897643875,
+      "reserve_activation_percent": 0.19312475859405176,
+      "cost_index": 0.5848677249604993,
+      "total_shortage": 51855641.89797588,
+      "total_unused_capacity": 12529658.343166623,
+      "policy": "V3"
+    },
+    {
+      "intervals": 2589,
+      "under_provisioned_percent": 56.46967941290073,
+      "mean_shortage": 20029.216646572375,
+      "p95_shortage": 113332.91369897804,
+      "shortfall_cvar95": 167672.3412847221,
+      "mean_unused_capacity": 4839.574485580001,
+      "mean_provisioned_capacity": 21400.242736651504,
+      "mean_actual_workload": 36589.884897643875,
+      "reserve_activation_percent": 0.19312475859405176,
+      "cost_index": 0.5848677249604993,
+      "total_shortage": 51855641.89797588,
+      "total_unused_capacity": 12529658.343166623,
+      "policy": "V4"
+    }
+  ]
+}

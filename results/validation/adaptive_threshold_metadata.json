@@ -1,0 +1,22 @@
+{
+  "module": "09_adaptive_threshold",
+  "method": "causal_failure_rate_adaptive_threshold",
+  "input": "results\\predictions\\calibrated_failure_risk_predictions.csv",
+  "output": "results\\policies\\adaptive_threshold_predictions.csv",
+  "theta_base": 0.9591,
+  "eta": 0.01,
+  "theta_min": 0.5,
+  "theta_max": 0.99,
+  "history_window": 60,
+  "target_failure_rate": 0.0448928515563898,
+  "target_failure_rate_source": "calibration_partition",
+  "calibration_rows": 6393,
+  "test_rows": 13651,
+  "test_used_for_parameter_selection": false,
+  "current_outcome_used_for_current_decision": false,
+  "causal_validation": "PASS",
+  "reserve_activation_rate": 0.030222355977914877,
+  "mean_threshold": 0.7546687289479472,
+  "minimum_threshold": 0.5,
+  "maximum_threshold": 0.99
+}

@@ -1,0 +1,5 @@
+policy,description,risk_threshold,reserve,change_point_reset
+V1,CP-HGB forecast-driven capacity with no risk reserve,None,None,No
+V2,CP-HGB forecast with fixed failure-risk threshold,Fixed Paper 4 base threshold,10%,No
+V3,CP-HGB forecast with adaptive failure-risk threshold,Adaptive,10%,No
+V4,CP-HGB forecast with adaptive threshold and change-point reset,Adaptive + reset,10%,Yes

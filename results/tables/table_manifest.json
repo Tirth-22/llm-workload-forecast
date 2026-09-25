@@ -1,0 +1,29 @@
+{
+  "module": "15_make_tables",
+  "tables_created": 8,
+  "tables": [
+    "table1_forecast_performance.csv",
+    "table2_failure_risk_performance.csv",
+    "table3_capacity_policy_performance.csv",
+    "table4_bootstrap_statistical_tests.csv",
+    "table5_experiment_configuration.csv",
+    "table6_reproduction_vs_proposed.csv",
+    "table7_policy_definitions.csv",
+    "table8_hypothesis_evidence.csv"
+  ],
+  "source_modules": [
+    "03_change_point_detector",
+    "05_train_short_term_forecaster",
+    "07_train_failure_risk",
+    "08_calibration",
+    "09_adaptive_threshold",
+    "10_capacity_simulation",
+    "11_change_point_reset",
+    "12_metrics",
+    "13_bootstrap_tests",
+    "14_make_figures"
+  ],
+  "test_data_used_for_training": false,
+  "test_parameter_tuning": false,
+  "winner_declared": false
+}

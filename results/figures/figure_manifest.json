@@ -1,0 +1,20 @@
+{
+  "module": "14_make_figures",
+  "figure_count": 11,
+  "figures": [
+    "fig01_forecast_error_comparison.png",
+    "fig02_actual_vs_forecast.png",
+    "fig03_forecast_absolute_error.png",
+    "fig04_change_point_alarms.png",
+    "fig05_failure_risk_distribution.png",
+    "fig06_failure_risk_calibration.png",
+    "fig07_capacity_policy_comparison.png",
+    "fig08_shortage_distribution.png",
+    "fig09_reserve_activation.png",
+    "fig10_threshold_reset_behavior.png",
+    "fig11_bootstrap_confidence_intervals.png"
+  ],
+  "dpi": 300,
+  "test_data_used_for_model_training": false,
+  "test_parameter_tuning": false
+}

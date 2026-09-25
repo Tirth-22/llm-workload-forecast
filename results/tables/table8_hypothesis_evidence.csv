@@ -1,0 +1,5 @@
+hypothesis,statement,current_evidence,status
+H1,CP-HGB will exhibit different forecasting performance from HGB under workload regime changes.,Observed differences exist; bootstrap results should be interpreted with Holm-adjusted uncertainty.,Not declared as accepted/rejected by this table
+H2,Adaptive risk thresholds will produce a different reliability-capacity trade-off from a fixed threshold.,V2 and V3 show different reserve activation and capacity values.,Requires interpretation with statistical results
+H3,Adding the change-point reset to the adaptive threshold will change performance during detected regime shifts.,V3 and V4 are identical on current aggregate locked-test capacity metrics.,No aggregate improvement demonstrated
+H4,V4 will reduce capacity shortfall relative to a no-reserve baseline without requiring the same reserve level continuously.,V4 has nonzero reserve activation while V1 has zero; aggregate shortage difference requires statistical interpretation.,Requires statistical interpretation
