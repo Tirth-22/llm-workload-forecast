@@ -1,0 +1,24 @@
+{
+  "module": "17_change_point_sensitivity",
+  "source_implementation": "validated Module 03",
+  "implementation_note": "Sensitivity analysis preserves the exact Module 03 window indexing, including the current observation in the short window.",
+  "rows": 17566,
+  "training_size": 12384,
+  "baseline": {
+    "short_window": 12,
+    "long_window": 276,
+    "absolute_log_shift": 0.1,
+    "min_alarm_gap": 288,
+    "threshold_quantile": 0.95
+  },
+  "baseline_threshold": 5.088177384409308,
+  "baseline_alarm_count": 27,
+  "baseline_split": {
+    "train": 22,
+    "calibration": 3,
+    "test": 2
+  },
+  "test_used_for_parameter_selection": false,
+  "configurations_evaluated": 81,
+  "validation": "PASS"
+}

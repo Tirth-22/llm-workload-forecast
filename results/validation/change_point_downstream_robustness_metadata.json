@@ -1,0 +1,96 @@
+{
+  "module": "18_change_point_downstream_robustness",
+  "purpose": "Evaluate whether pre-defined change-point parameter variations propagate into downstream V4 capacity behavior.",
+  "module17_alarm_representation": "Alarm-only rows; every row in change_point_sensitivity_alarms.csv represents an alarm.",
+  "module17_configuration_id_order": "S in [6,12,24], L in [144,276,432], Shift in [0.05,0.10,0.20], Gap in [144,288,576].",
+  "baseline_config_id": 41,
+  "selection_method": "Baseline plus one-factor-at-a-time alternatives.",
+  "configuration_count": 9,
+  "configurations": [
+    {
+      "configuration": "baseline",
+      "short_window": 12,
+      "long_window": 276,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 288,
+      "config_id": 41
+    },
+    {
+      "configuration": "short_6",
+      "short_window": 6,
+      "long_window": 276,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 288,
+      "config_id": 14
+    },
+    {
+      "configuration": "short_24",
+      "short_window": 24,
+      "long_window": 276,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 288,
+      "config_id": 68
+    },
+    {
+      "configuration": "long_144",
+      "short_window": 12,
+      "long_window": 144,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 288,
+      "config_id": 32
+    },
+    {
+      "configuration": "long_432",
+      "short_window": 12,
+      "long_window": 432,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 288,
+      "config_id": 50
+    },
+    {
+      "configuration": "shift_0.05",
+      "short_window": 12,
+      "long_window": 276,
+      "absolute_log_shift": 0.05,
+      "min_alarm_gap": 288,
+      "config_id": 38
+    },
+    {
+      "configuration": "shift_0.20",
+      "short_window": 12,
+      "long_window": 276,
+      "absolute_log_shift": 0.2,
+      "min_alarm_gap": 288,
+      "config_id": 44
+    },
+    {
+      "configuration": "gap_144",
+      "short_window": 12,
+      "long_window": 276,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 144,
+      "config_id": 40
+    },
+    {
+      "configuration": "gap_576",
+      "short_window": 12,
+      "long_window": 276,
+      "absolute_log_shift": 0.1,
+      "min_alarm_gap": 576,
+      "config_id": 42
+    }
+  ],
+  "v3_source": "results\\policies\\V3_adaptive_risk.csv",
+  "module17_source": "results\\sensitivity\\change_point_sensitivity_alarms.csv",
+  "module11_baseline_source": "results\\policies\\V4_adaptive_reset.csv",
+  "theta_base": 0.9591,
+  "reserve_factor": 1.1,
+  "primary_forecast": "CP-HGB",
+  "capacity_definition": "normalized workload capacity",
+  "token_to_gpu_conversion": false,
+  "test_used_for_configuration_selection": false,
+  "test_used_for_parameter_tuning": false,
+  "baseline_reproduction": "PASS",
+  "causal_reset_rule": "Alarm interval resets threshold to theta_base; non-alarm interval preserves V3 adaptive threshold.",
+  "robustness_validation": "PASS"
+}

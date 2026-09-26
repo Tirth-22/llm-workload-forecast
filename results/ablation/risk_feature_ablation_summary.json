@@ -1,0 +1,51 @@
+{
+  "full_model": {
+    "test_rows": 13651,
+    "failure_prevalence_percent": 1.36986301369863,
+    "ROC_AUC": 0.8049967272600176,
+    "Average_Precision": 0.1951498687252422,
+    "Brier_calibrated": 0.012653331631890028,
+    "Brier_raw_diagnostic": 0.014775961470934839,
+    "LogLoss_calibrated": 0.06772024083797183,
+    "ECE_10_bin": 0.01989534945177334,
+    "classification_threshold": 0.9591,
+    "Precision": 0.8888888888888888,
+    "Recall": 0.0427807486631016,
+    "F1": 0.08163265306122448
+  },
+  "ablation_model": {
+    "test_rows": 13651,
+    "failure_prevalence_percent": 1.36986301369863,
+    "ROC_AUC": 0.7120350246726466,
+    "Average_Precision": 0.04050474541640736,
+    "Brier_calibrated": 0.015518196698029434,
+    "Brier_raw_diagnostic": 0.03319991932010708,
+    "LogLoss_calibrated": 0.08439281942720722,
+    "ECE_10_bin": 0.0301766209345267,
+    "classification_threshold": 0.9591,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0
+  },
+  "full_feature_count": 89,
+  "ablation_feature_count": 72,
+  "removed_features": [
+    "zero_response_count_lag_1",
+    "zero_response_count_lag_2",
+    "zero_response_count_lag_5",
+    "zero_response_count_lag_15",
+    "zero_response_count_lag_60",
+    "zero_response_count_lag_240",
+    "zero_response_count_lag_1440",
+    "zero_response_count_rolling_sum_5",
+    "zero_response_count_rolling_sum_15",
+    "zero_response_count_rolling_sum_60",
+    "zero_response_count_rolling_sum_240",
+    "zero_response_count_rolling_sum_1440",
+    "zero_response_count_rolling_mean_5",
+    "zero_response_count_rolling_mean_15",
+    "zero_response_count_rolling_mean_60",
+    "zero_response_count_rolling_mean_240",
+    "zero_response_count_rolling_mean_1440"
+  ]
+}
