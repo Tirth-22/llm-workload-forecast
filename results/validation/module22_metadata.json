@@ -1,0 +1,25 @@
+{
+  "module": "22_paired_policy_statistics",
+  "source": "results\\policies\\module21_forecast_adaptive_risk_comparison.csv",
+  "models": [
+    "Persistence",
+    "HGB",
+    "CP-HGB"
+  ],
+  "paired_intervals": 2589,
+  "metrics": [
+    "shortage",
+    "unused_capacity",
+    "provisioned_capacity",
+    "absolute_control_error"
+  ],
+  "tests": [
+    "Wilcoxon signed-rank",
+    "paired bootstrap 95% CI for mean difference",
+    "Holm correction within each metric"
+  ],
+  "bootstrap_replicates": 10000,
+  "random_seed": 42,
+  "test_parameter_tuning": false,
+  "purpose": "Determine whether forecast-driven policy differences are statistically distinguishable on the locked test set."
+}

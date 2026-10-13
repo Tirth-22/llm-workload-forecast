@@ -1,0 +1,18 @@
+{
+  "module": "20_forecast_to_control_comparison",
+  "research_topic": "Short-Term LLM Workload Prediction for Adaptive Cloud Computing",
+  "input_file": "T:\\D-drive\\Sem - 5\\research\\llm-adaptive-research\\results\\predictions\\baseline_forecast_predictions.csv",
+  "input_schema_source": "actual Module 19 output",
+  "locked_test_only": true,
+  "forecast_models_compared": [
+    "Persistence",
+    "HGB",
+    "CP-HGB"
+  ],
+  "forecast_models_retrained": false,
+  "controller_type": "fixed normalized-capacity forecast controller",
+  "reserve_fraction": 0.1,
+  "controller_parameters_tuned_on_test": false,
+  "purpose": "Determine whether the choice of short-term workload forecaster changes downstream capacity-control performance.",
+  "cloud_resource_interpretation": "Normalized workload capacity only; no direct token-to-GPU conversion is claimed."
+}

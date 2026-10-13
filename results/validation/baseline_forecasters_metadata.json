@@ -1,0 +1,63 @@
+{
+  "module": "19_baseline_forecasters",
+  "purpose": "Fair locked-test comparison of transparent forecasting baselines against existing HGB and CP-HGB.",
+  "dataset": "BurstGPT_1",
+  "target": "target_next_5min",
+  "forecast_horizon": "next five-minute interval",
+  "train_partition": [
+    0,
+    12383
+  ],
+  "calibration_partition": [
+    12384,
+    14975
+  ],
+  "locked_test_partition": [
+    14976,
+    17565
+  ],
+  "usable_locked_test_rows": 2589,
+  "maximum_history": 288,
+  "models": [
+    "Persistence",
+    "Seasonal Naive (Daily)",
+    "Moving Average (60 min)",
+    "Linear Regression",
+    "Random Forest",
+    "HGB",
+    "CP-HGB"
+  ],
+  "ml_features": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_6",
+    "lag_12",
+    "lag_24",
+    "lag_72",
+    "lag_144",
+    "lag_288",
+    "rolling_mean_3",
+    "rolling_mean_12",
+    "rolling_mean_72",
+    "rolling_mean_288",
+    "rolling_std_3",
+    "rolling_std_12",
+    "rolling_std_72",
+    "rolling_std_288",
+    "rolling_max_12",
+    "rolling_max_72",
+    "rolling_max_288",
+    "daily_sin",
+    "daily_cos",
+    "weekly_sin",
+    "weekly_cos"
+  ],
+  "moving_average_window_bins": 12,
+  "seasonal_period_bins": 288,
+  "random_split": false,
+  "test_used_for_training": false,
+  "test_used_for_hyperparameter_tuning": false,
+  "existing_hgb_predictions_reused": true,
+  "existing_cp_hgb_predictions_reused": true
+}

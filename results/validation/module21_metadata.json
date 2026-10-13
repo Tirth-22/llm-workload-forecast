@@ -1,0 +1,21 @@
+{
+  "module": "21_forecast_adaptive_risk_control",
+  "research_topic": "Short-Term LLM Workload Prediction for Adaptive Cloud Computing",
+  "forecast_input": "T:\\D-drive\\Sem - 5\\research\\llm-adaptive-research\\results\\predictions\\baseline_forecast_predictions.csv",
+  "risk_input": "T:\\D-drive\\Sem - 5\\research\\llm-adaptive-research\\results\\predictions\\calibrated_failure_risk_predictions.csv",
+  "adaptive_threshold_input": "T:\\D-drive\\Sem - 5\\research\\llm-adaptive-research\\results\\policies\\adaptive_threshold_predictions.csv",
+  "forecast_models": [
+    "Persistence",
+    "HGB",
+    "CP-HGB"
+  ],
+  "risk_model_retrained": false,
+  "risk_aggregation": "maximum calibrated minute-level risk within each five-minute interval (exact Module 10 rule)",
+  "adaptive_threshold_aggregation": "first threshold available within each five-minute interval (exact Module 10 rule)",
+  "reserve_rule": "risk_signal > adaptive_threshold",
+  "reserve_factor": 0.1,
+  "test_set_parameter_tuning": false,
+  "forecast_models_retrained": false,
+  "purpose": "Isolate the effect of the short-term workload forecaster while holding the existing calibrated-risk adaptive controller fixed.",
+  "scope_note": "Capacity remains normalized workload capacity; no direct token-to-GPU conversion is claimed."
+}
